@@ -1,0 +1,27 @@
+﻿<Window x:Class="practikaEND.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:practikaEND"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="281" Width="500" Background="GreenYellow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+
+        </Grid.RowDefinitions>
+        <TextBlock TextWrapping="Wrap"  Text="Авторизация" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" />
+        <TextBlock TextWrapping="Wrap" Text="Login" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="20" Width="120"/>
+        <TextBlock TextWrapping="Wrap" Text="Password" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="20" Width="120"/>
+        <TextBox x:Name="Login" Grid.Row="2" Background="LightGreen" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="Password" Background="LightGreen" Grid.Row="4" VerticalAlignment="Center"/>
+        <Button Content="Авторизация" FontSize="20" Grid.Row="5" Click="Button_Click" Background="LightGreen" />
+        <Frame x:Name="PageFrame" Grid.RowSpan="6"/>
+    </Grid>
+</Window>
